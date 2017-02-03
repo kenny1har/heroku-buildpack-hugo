@@ -47,3 +47,8 @@ echo "\n-----> Building the site"
 cd $BUILD_DIR
 mkdir -p static | indent
 ./hugo | indent
+
+mv public ..
+cd ..
+rm -rf app
+mv public app
