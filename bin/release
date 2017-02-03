@@ -3,5 +3,5 @@
 cat << EOF
 ---
 default_process_types:
-  web: "pushd public; python –m SimpleHTTPServer \$PORT; popd;"
+  web: "cd /app/public && python –m SimpleHTTPServer \$PORT"
 EOF
